@@ -31,7 +31,7 @@ func GetRoutes() *mux.Router {
 
 	//routes todos
 	protected.HandleFunc("/create-todos", handlers.CreateTodoHandler).Methods("POST")
-	protected.HandleFunc("/mark-todo-complete", handlers.ToggleTodoStatusdHandler).Methods("POST")
+	protected.HandleFunc("/mark-todo-complete", handlers.ToggleTodoStatusdHandler).Methods("POST")//
 	protected.HandleFunc("/fetch-todos-info", handlers.GetTodoByStatus).Methods("GET")
 	protected.HandleFunc("/todos/update", handlers.UpdateTodoHandler).Methods("PUT")
 	protected.HandleFunc("/todos/delete", handlers.DeleteTodoRecord).Methods("DELETE")
