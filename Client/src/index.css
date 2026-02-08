@@ -1,0 +1,60 @@
+body {
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg, #667eea, #764ba2);
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.auth-container {
+display: flex;
+gap: 2rem;
+}
+
+
+.card {
+background: #fff;
+padding: 2rem;
+border-radius: 12px;
+width: 300px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+.card h2 {
+margin-bottom: 1rem;
+}
+
+
+input {
+width: 100%;
+padding: 10px;
+margin-bottom: 1rem;
+border-radius: 6px;
+border: 1px solid #ccc;
+}
+
+
+button {
+width: 100%;
+padding: 10px;
+border: none;
+border-radius: 6px;
+background: #667eea;
+color: white;
+font-weight: bold;
+cursor: pointer;
+}
+
+
+button:hover {
+background: #5a67d8;
+}
+
+
+.error {
+color: red;
+margin-bottom: 1rem;
+}
