@@ -12,7 +12,7 @@ export function TodoList() {
   const [editDesc, setEditDesc] = useState("");
   const [editStatus, setEditStatus] = useState(false);
 
-  // Load pending todos
+  //Load pending todos
   const loadPending = async () => {
     setLoadingPending(true);
     try {

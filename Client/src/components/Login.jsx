@@ -15,14 +15,14 @@ export default function Login() {
     try {
       const res = await api.post("/login", { email, password });
 
-      // Save tokens
+      // save_tokens
       localStorage.setItem("access_token", res.data.acess_token);
       localStorage.setItem("refresh_token", res.data.refresh_token);
 
-      // Success message
+
       alert("Login successful");
 
-      // Reload app to show Dashboard
+
       location.reload();
     } catch (err) {
       if (err.response?.status === 401) {
