@@ -9,8 +9,8 @@ baseURL: "http://localhost:8080",
 api.interceptors.request.use((config) => {
 const token = localStorage.getItem("access_token");
 if (token) {
-config.headers.Authorization = token; // NOT Bearer, plain token
-}
+config.headers.Authorization = token; //plain token string 
+ }
 return config;
 });
 
